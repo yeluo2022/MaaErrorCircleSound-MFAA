@@ -446,3 +446,10 @@ install
 
 # Tools
 tools/ImageCropper/**/*.png
+
+# cachefiles
+assets/config
+assets/resource/src
+assets/resource/image/todo
+*.todo
+act_functions/test
