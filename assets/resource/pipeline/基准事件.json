@@ -1,89 +1,48 @@
 {
-	"基准_加载中": {
-		"recognition": "TemplateMatch",
-		"template": "基准_加载中.png",
-		"method": 3,
-		"threshold": 0.95,
-		"roi": [
-			72,
-			639,
-			59,
-			46
-		],
-		"post_wait_freezes": 1000
-	},
-	"基准_已经登录": {
-		"recognition": "TemplateMatch",
-		"template": "登录_已经登录_系统.png",
-		"method": 5,
-		"threshold": 0.9,
-		"roi": [
-			150,
-			607,
-			37,
-			51
-		]
-	},
-	"基准_完成登录": {
-		"recognition": "TemplateMatch",
-		"template": "登录_设置按钮.png",
-		"method": 3,
-		"threshold": 0.9,
-		"roi": [
-			99,
-			597,
-			72,
-			82
-		],
-		"action": "Click",
-		"target": [
-			612,
-			25,
-			570,
-			640
-		]
-	},
-	"基准_返回主界面": {
-		"next": [
-			"基准_完成登录",
-			"基准_已经登录"
-		],
-		"interrupt": [
-			"基准_加载中",
-			"基准_基建_退出基建"
-		]
-	},
-	"基准_基建_退出基建": {
-		"recognition": "TemplateMatch",
-		"template": "基建_退出基建.png",
-		"method": 3,
-		"threshold": 0.9,
-		"roi": [
-			164,
-			25,
-			40,
-			40
-		],
-		"action": "Click",
-		"next": ["基准_基建_确认退出"]
-	},
-	"基准_基建_确认退出": {
-		"recognition": "TemplateMatch",
-		"template": "基建_离开事务所.png",
-		"method": 3,
-		"threshold": 0.9,
-		"roi": [
-			542,
-			229,
-			187,
-			87
-		],
-		"action": "Click",
-		"target": [
-			679,
-			354,
-			89,
-			81
-		]
-	}
+    "基准_加载中": {
+        "recognition": "TemplateMatch",
+        "template": "基准_加载中.png",
+        "method": 3,
+        "threshold": 0.95,
+        "roi": [72, 639, 59, 46],
+        "post_wait_freezes": 1000
+    },
+    "基准_已经登录": {
+        "recognition": "TemplateMatch",
+        "template": "登录_已经登录_系统.png",
+        "method": 5,
+        "threshold": 0.9,
+        "roi": [45, 578, 164, 111]
+    },
+    "基准_完成登录": {
+        "recognition": "TemplateMatch",
+        "template": "登录_设置按钮.png",
+        "method": 3,
+        "threshold": 0.9,
+        "roi": [7, 582, 183, 103],
+        "action": "Click",
+        "target": [612, 25, 570, 640]
+    },
+    "基准_返回主界面": {
+        "next": ["基准_完成登录", "基准_已经登录"],
+        "interrupt": ["基准_加载中", "基准_基建_退出基建"]
+    },
+    "基准_基建_退出基建": {
+        "recognition": "TemplateMatch",
+        "template": "基建_退出基建.png",
+        "method": 3,
+        "threshold": 0.9,
+        "roi": [39, 9, 194, 78],
+        "action": "Click",
+        "next": ["基准_基建_确认退出"]
+    },
+    "基准_基建_确认退出": {
+        "recognition": "TemplateMatch",
+        "template": "基建_离开事务所.png",
+        "method": 3,
+        "threshold": 0.9,
+        "roi": [542, 229, 187, 87],
+        "action": "Click",
+        "target": [679, 354, 89, 81]
+    }
 }

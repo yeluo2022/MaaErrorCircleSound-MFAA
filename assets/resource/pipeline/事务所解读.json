@@ -1,183 +1,107 @@
 {
-	"基建_冥想准备": {
-		"next": [
-			"解读_解读检测"
-		],
-		"interrupt": [
-			"基建_解读_预备解读",
-			"基建_冥想日志",
-			"基准_加载中",
-			"主页_进入基建"
-		]
-	},
-	"主页_进入基建": {
-		"recognition": "TemplateMatch",
-		"template": "主页_事务所.png",
-		"method": 3,
-		"threshold": 0.9,
-		"roi": [
-			1030,
-			435,
-			106,
-			39
-		],
-		"action": "Click",
-		"post_delay": 2000
-	},
-	"基建_冥想日志": {
-		"recognition": "TemplateMatch",
-		"template": "基建_冥想日志.png",
-		"method": 3,
-		"threshold": 0.9,
-		"roi": [
-			559,
-			40,
-			159,
-			44
-		],
-		"action": "Click",
-		"target": [
-			1153,
-			73,
-			111,
-			616
-		]
-	},
-	"基建_解读_预备解读": {
-		"recognition": "TemplateMatch",
-		"template": "基建_解读按钮.png",
-		"method": 3,
-		"threshold": 0.9,
-		"roi": [
-			1106,
-			615,
-			54,
-			66
-		],
-		"action": "Click"
-	},
-	"解读_解读检测": {
-		"recognition": "TemplateMatch",
-		"template": "解读_解读仪式页面.png",
-		"method": 3,
-		"threshold": 0.9,
-		"rate_limit": 3000,
-		"roi": [
-			102,
-			77,
-			213,
-			194
-		],
-		"next": [
-			"解读_追加残片"
-		],
-		"interrupt": [
-			"解读_关闭解读",
-			"解读_进行解读",
-			"解读_触发解读"
-		]
-	},
-	"解读_触发解读": {
-		"todo": "直接点击固定区域就行,能进行到这里说明还有线索没读完",
-		"action": "Click",
-		"target": [
-			413,
-			120,
-			140,
-			207
-		]
-	},
-	"解读_进行解读": {
-		"todo": "这里需要一个自定义逻辑,仅pipeline就默认第一个,正常需要考虑收益最大化选区,然后回到检测点",
-		"recognition": "TemplateMatch",
-		"template": "解读_开始仪式.png",
-		"method": 3,
-		"threshold": 0.9,
-		"action": "Click",
-		"roi": [
-			237,
-			547,
-			90,
-			31
-		]
-	},
-	"解读_关闭解读": {
-		"todo": "这里需要一个自定义逻辑,仅pipeline就默认第一个,正常需要考虑收益最大化选区,然后回到检测点",
-		"recognition": "TemplateMatch",
-		"template": "解读_关闭解读.png",
-		"method": 3,
-		"threshold": 0.9,
-		"action": "Click",
-		"roi": [
-			517,
-			655,
-			244,
-			34
-		]
-	},
-	"解读_追加残片": {
-		"recognition": "TemplateMatch",
-		"template": "解读_追加档案残片.png",
-		"method": 5,
-		"threshold": 0.99,
-		"action": "Click",
-		"roi": [
-			822,
-			634,
-			233,
-			41
-		],
-		"next": [
-			"解读_残片_完成追加",
-			"解读_残片_失败追加"
-		]
-	},
-	"解读_残片_完成追加": {
-		"recognition": "TemplateMatch",
-		"template": "解读_残片_确定追加.png",
-		"method": 3,
-		"threshold": 0.99,
-		"action": "Click",
-		"roi": [
-			691,
-			492,
-			231,
-			39
-		],
-		"next": ["解读_解读检测"]
-	},
-	"解读_残片_失败追加": {
-		"recognition": "TemplateMatch",
-		"template": "解读_残片_失败追加.png",
-		"method": 3,
-		"threshold": 0.9,
-		"action": "Click",
-		"roi": [
-			687,
-			488,
-			237,
-			42
-		],
-		"target": [
-			374,
-			492,
-			234,
-			41
-		],
-		"next": ["解读_退出解读"]
-	},
-	"解读_退出解读": {
-		"recognition": "TemplateMatch",
-		"template": "解读_退出解读.png",
-		"method": 5,
-		"threshold": 0.9,
-		"action": "Click",
-		"roi": [
-			88,
-			17,
-			182,
-			41
-		],
-		"next": ["基准_返回主界面"]
-	}
+    "基建_冥想准备": {
+        "next": ["解读_解读检测"],
+        "interrupt": [
+            "基建_解读_预备解读",
+            "基建_冥想日志",
+            "基准_加载中",
+            "主页_进入基建"
+        ]
+    },
+    "主页_进入基建": {
+        "recognition": "TemplateMatch",
+        "template": "主页_事务所.png",
+        "method": 3,
+        "threshold": 0.9,
+        "roi": [999, 395, 281, 102],
+        "action": "Click",
+        "post_delay": 2000
+    },
+    "基建_冥想日志": {
+        "recognition": "TemplateMatch",
+        "template": "基建_冥想日志.png",
+        "method": 3,
+        "threshold": 0.9,
+        "roi": [559, 40, 159, 44],
+        "action": "Click",
+        "target": [1153, 73, 111, 616]
+    },
+    "基建_解读_预备解读": {
+        "recognition": "TemplateMatch",
+        "template": "基建_解读按钮.png",
+        "method": 3,
+        "threshold": 0.9,
+        "roi": [1101, 597, 166, 102],
+        "action": "Click"
+    },
+    "解读_解读检测": {
+        "recognition": "TemplateMatch",
+        "template": "解读_解读仪式页面.png",
+        "method": 3,
+        "threshold": 0.9,
+        "rate_limit": 3000,
+        "roi": [10, 36, 314, 242],
+        "next": ["解读_追加残片"],
+        "interrupt": ["解读_关闭解读", "解读_进行解读", "解读_触发解读"]
+    },
+    "解读_触发解读": {
+        "todo": "直接点击固定区域就行,能进行到这里说明还有线索没读完",
+        "action": "Click",
+        "target": [413, 120, 140, 207]
+    },
+    "解读_进行解读": {
+        "todo": "这里需要一个自定义逻辑,仅pipeline就默认第一个,正常需要考虑收益最大化选区,然后回到检测点",
+        "recognition": "TemplateMatch",
+        "template": "解读_开始仪式.png",
+        "method": 3,
+        "threshold": 0.9,
+        "action": "Click",
+        "roi": [69, 524, 341, 80]
+    },
+    "解读_关闭解读": {
+        "todo": "这里需要一个自定义逻辑,仅pipeline就默认第一个,正常需要考虑收益最大化选区,然后回到检测点",
+        "recognition": "TemplateMatch",
+        "template": "解读_关闭解读.png",
+        "method": 3,
+        "threshold": 0.9,
+        "action": "Click",
+        "roi": [517, 655, 244, 34]
+    },
+    "解读_追加残片": {
+        "recognition": "TemplateMatch",
+        "template": "解读_追加档案残片.png",
+        "method": 5,
+        "threshold": 0.99,
+        "action": "Click",
+        "roi": [799, 595, 381, 104],
+        "next": ["解读_残片_完成追加", "解读_残片_失败追加"]
+    },
+    "解读_残片_完成追加": {
+        "recognition": "TemplateMatch",
+        "template": "解读_残片_确定追加.png",
+        "method": 3,
+        "threshold": 0.99,
+        "action": "Click",
+        "roi": [691, 492, 231, 39],
+        "next": ["解读_解读检测"]
+    },
+    "解读_残片_失败追加": {
+        "recognition": "TemplateMatch",
+        "template": "解读_残片_失败追加.png",
+        "method": 3,
+        "threshold": 0.9,
+        "action": "Click",
+        "roi": [687, 488, 237, 42],
+        "target": [374, 492, 234, 41],
+        "next": ["解读_退出解读"]
+    },
+    "解读_退出解读": {
+        "recognition": "TemplateMatch",
+        "template": "解读_退出解读.png",
+        "method": 5,
+        "threshold": 0.9,
+        "action": "Click",
+        "roi": [10, 8, 273, 59],
+        "next": ["基准_返回主界面"]
+    }
 }
