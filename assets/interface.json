@@ -1,6 +1,6 @@
 {
 	"version": "0.0.0.1",
-	"message": "哎?你也要来抓青蛙吗?",
+	"message": "画大饼游戏",
 	"name": "Maa-ErrorSounds",
 	"default_controller": "Adb",
 	"controller": [
@@ -25,6 +25,10 @@
 		{
 			"name": "自动冥想",
 			"entry": "基建_冥想准备"
+		},
+		{
+			"name": "心锚获取",
+			"entry": "特别行动"
 		}
 	]
 }
