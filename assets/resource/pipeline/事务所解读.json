@@ -9,8 +9,8 @@
         ]
     },
     "主页_进入基建": {
-        "recognition": "TemplateMatch",
-        "template": "主页_事务所.png",
+        "recognition": "OCR",
+        "expected": ["事务所"],
         "method": 3,
         "threshold": 0.9,
         "roi": [999, 395, 281, 102],
@@ -27,8 +27,9 @@
         "target": [1153, 73, 111, 616]
     },
     "基建_解读_预备解读": {
-        "recognition": "TemplateMatch",
-        "template": "基建_解读按钮.png",
+        "recognition": "OCR",
+        "expected": ["解读"],
+        "target_offset": [0,-50,0,-50],
         "method": 3,
         "threshold": 0.9,
         "roi": [1101, 597, 166, 102],
@@ -51,15 +52,14 @@
     },
     "解读_进行解读": {
         "todo": "这里需要一个自定义逻辑,仅pipeline就默认第一个,正常需要考虑收益最大化选区,然后回到检测点",
-        "recognition": "TemplateMatch",
-        "template": "解读_开始仪式.png",
+        "recognition": "OCR",
+        "expected": ["开始仪式"],
         "method": 3,
         "threshold": 0.9,
         "action": "Click",
         "roi": [69, 524, 341, 80]
     },
     "解读_关闭解读": {
-        "todo": "这里需要一个自定义逻辑,仅pipeline就默认第一个,正常需要考虑收益最大化选区,然后回到检测点",
         "recognition": "TemplateMatch",
         "template": "解读_关闭解读.png",
         "method": 3,

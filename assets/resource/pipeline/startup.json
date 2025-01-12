@@ -2,7 +2,10 @@
     "StartUp": {
         "action": "DoNothing",
         "rate_limit": 2000,
-        "next": ["基准_完成登录", "基准_已经登录"],
+        "next": [
+            "基准_完成登录", 
+            "基准_已经登录"
+        ],
         "interrupt": [
             "基准_加载中",
             "登录_关闭签到",
