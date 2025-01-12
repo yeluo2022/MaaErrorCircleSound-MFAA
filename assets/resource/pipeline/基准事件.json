@@ -8,31 +8,38 @@
         "post_wait_freezes": 1000
     },
     "基准_已经登录": {
-        "recognition": "TemplateMatch",
-        "template": "登录_已经登录_系统.png",
+        "recognition": "OCR",
+        "expected": ["系统"],
         "method": 5,
         "threshold": 0.9,
-        "roi": [45, 578, 164, 111]
+        "roi": [44,641,168,55]
     },
     "基准_完成登录": {
-        "recognition": "TemplateMatch",
-        "template": "登录_设置按钮.png",
+        "recognition": "OCR",
+        "expected": ["设置"],
         "method": 3,
         "threshold": 0.9,
-        "roi": [7, 582, 183, 103],
+        "roi": [29,581,187,105],
         "action": "Click",
         "target": [612, 25, 570, 640]
     },
     "基准_返回主界面": {
-        "next": ["基准_完成登录", "基准_已经登录"],
-        "interrupt": ["基准_加载中", "基准_基建_退出基建"]
+        "next": [
+            "基准_完成登录", 
+            "基准_已经登录"
+        ],
+        "interrupt": [
+            "基准_加载中", 
+            "基准_基建_退出基建"
+        ]
     },
     "基准_基建_退出基建": {
-        "recognition": "TemplateMatch",
-        "template": "基建_退出基建.png",
+        "recognition": "OCR",
+        "expected": ["事务所"],
         "method": 3,
         "threshold": 0.9,
-        "roi": [39, 9, 194, 78],
+        "roi": [101,12,284,80],
+        "target_offset": [-50,0,-50,0],
         "action": "Click",
         "next": ["基准_基建_确认退出"]
     },
