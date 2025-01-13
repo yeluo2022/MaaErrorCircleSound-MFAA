@@ -33,7 +33,7 @@
     },
     "登录_关闭登录公告": {
         "recognition": "TemplateMatch",
-        "template": "登录_关闭公告.png",
+        "template": "登录/登录_关闭公告.png",
         "method": 3,
         "threshold": 0.98,
         "roi": [1126, 76, 51, 49],
@@ -42,7 +42,7 @@
     },
     "登录_服务器维护中": {
         "recognition": "TemplateMatch",
-        "template": "登录_维护中.png",
+        "template": "登录/登录_维护中.png",
         "post_delay": 12000,
         "method": 3,
         "threshold": 0.9,
@@ -51,7 +51,7 @@
     },
     "登录_点击登录": {
         "recognition": "TemplateMatch",
-        "template": "登录_点击开始游戏.png",
+        "template": "登录/登录_点击开始游戏.png",
         "method": 3,
         "threshold": 0.9,
         "roi": [543, 511, 197, 32],
@@ -60,7 +60,7 @@
     },
     "登录_每日签到物资": {
         "recognition": "TemplateMatch",
-        "template": "登录_每日签到物资.png",
+        "template": "登录/登录_每日签到物资.png",
         "method": 3,
         "threshold": 0.9,
         "roi": [586, 561, 155, 118],
@@ -69,7 +69,7 @@
     },
     "登录_关闭签到": {
         "recognition": "TemplateMatch",
-        "template": "登录_关闭签到页.png",
+        "template": "登录/登录_关闭签到页.png",
         "method": 3,
         "threshold": 0.98,
         "roi": [1161, 70, 49, 52],
@@ -77,7 +77,7 @@
     },
     "登录_月度资源": {
         "recognition": "TemplateMatch",
-        "template": "登录_月度资源包叉叉.png",
+        "template": "登录/登录_月度资源包叉叉.png",
         "method": 3,
         "threshold": 0.9,
         "roi": [515, 354, 88, 83],

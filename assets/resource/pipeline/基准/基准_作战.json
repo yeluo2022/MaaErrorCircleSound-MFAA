@@ -1,0 +1,10 @@
+{
+    "基准_作战_进入作战": {
+        "recognition": "OCR",
+        "expected": [
+            "作战"
+        ],
+        "roi": [816,280,216,87],
+        "action": "Click"
+    }
+}

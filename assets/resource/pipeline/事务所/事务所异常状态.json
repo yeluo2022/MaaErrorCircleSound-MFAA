@@ -1,0 +1,11 @@
+{
+    "基建_冥想日志": {
+        "recognition": "TemplateMatch",
+        "template": "事务所/基建_冥想日志.png",
+        "method": 3,
+        "threshold": 0.9,
+        "roi": [559, 40, 159, 44],
+        "action": "Click",
+        "target": [1153, 73, 111, 616]
+    }
+}
