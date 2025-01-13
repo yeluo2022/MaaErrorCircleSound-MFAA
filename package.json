@@ -1,5 +1,13 @@
 {
+  "name": "MaaErrorCircleSound",
+  "version": "1.0.0",
+  "description": "基于全新架构的 异象回声 小助手。图像技术 + 模拟控制，解放双手！  \r 由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 强力驱动！",
   "devDependencies": {
     "prettier-plugin-multiline-arrays": "^3.0.6"
+  },
+  "scripts": {
+    "start:mad": "cd ./deps/tools/ImageCropper && python -m MaaDebugger --port 8080",
+    "start:ic": "cd ./deps/tools/ImageCropper && python main.py",
+    "build": "python ./install.py"
   }
 }
