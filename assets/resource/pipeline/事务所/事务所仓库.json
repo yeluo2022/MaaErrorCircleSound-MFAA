@@ -64,13 +64,17 @@
         "threshold": 0.9,
         "roi": [586, 561, 155, 118],
         "action": "Click",
+        "post_delay": 1000,
         "next":[
             "分解_收尾点击"
         ]
     },
     "分解_收尾点击": {
-        "roi": [721,79,247,99],
-        "action": "Click"
+        "recognition": "OCR",
+        "expected": ["全部"],
+        "roi": [1128,72,67,61],
+        "action": "Click",
+        "target": [721,79,247,99]
     },
     "仓库_分解_失败分解": {
         "recognition": "TemplateMatch",
