@@ -13,21 +13,20 @@
         "expected": ["事务所"],
         "method": 3,
         "threshold": 0.9,
-        "roi": [101,12,284,80],
-        "target_offset": [-80,0,-80,0],
+        "roi": [101, 12, 284, 80],
+        "target_offset": [-80, 0, -80, 0],
         "action": "Click",
-        "next": [
-            "基准_基建_确认退出",
-            "基准_基建_退出基建"
-        ]
+        "post_delay": 1000,
+        "next": ["基准_基建_确认退出", "基准_基建_退出基建"]
     },
     "基准_基建_确认退出": {
         "recognition": "TemplateMatch",
         "template": "事务所/基建_离开事务所.png",
         "method": 3,
         "threshold": 0.9,
-        "roi": [542,229,187,87],
+        "roi": [542, 229, 187, 87],
         "action": "Click",
-        "target": [679,354,89,81]
+        "post_delay": 1000,
+        "target": [679, 354, 89, 81]
     }
 }
