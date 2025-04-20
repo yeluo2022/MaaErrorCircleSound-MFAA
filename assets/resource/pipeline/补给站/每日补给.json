@@ -1,7 +1,7 @@
 {
     "补给_补给准备": {
         "next": ["补给_支援货柜_明日可领取"],
-        "interrupt": ["主页_进入补给站", "补给_支援货柜", "补给_支援货柜_可领取"]
+        "interrupt": ["补给_支援货柜_可领取", "补给_支援货柜_领取后消除", "补给_支援货柜", "主页_进入补给站"]
     },
     "主页_进入补给站": {
         "recognition": "OCR",
@@ -18,10 +18,9 @@
         "expected": ["支援货柜"],
         "method": 3,
         "threshold": 0.9,
-        "roi": [12, 306, 178, 50],
+        "roi": [7, 260, 201, 78],
         "action": "Click",
-        "post_delay": 1000,
-        "target": [12, 306, 178, 50]
+        "post_delay": 1000
     },
     "补给_支援货柜_可领取": {
         "recognition": "OCR",
@@ -31,18 +30,15 @@
         "roi": [237, 346, 233, 39],
         "action": "Click",
         "post_delay": 1000,
-        "target": [237, 346, 233, 39],
-        "next": ["补给_支援货柜_领取后消除", "补给_支援货柜_可领取"]
+        "target": [237, 346, 233, 39]
     },
     "补给_支援货柜_领取后消除": {
-        "recognition": "TemplateMatch",
-        "template": "登录/登录_每日签到物资.png",
-        "method": 3,
-        "threshold": 0.95,
-        "roi": [586, 561, 155, 118],
+        "recognition": "OCR",
+        "expected": ["获取物资"],
+        "roi": [529, 70, 226, 87],
         "action": "Click",
-        "post_delay": 1000,
-        "interrupt": ["补给_支援货柜_领取后消除"]
+        "target": [633, 589, 63, 67],
+        "post_delay": 1000
     },
     "补给_支援货柜_明日可领取": {
         "recognition": "OCR",

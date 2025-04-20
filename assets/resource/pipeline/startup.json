@@ -2,10 +2,7 @@
     "StartUp": {
         "action": "DoNothing",
         "rate_limit": 2000,
-        "next": [
-            "基准_完成登录", 
-            "基准_已经登录"
-        ],
+        "next": ["基准_完成登录", "基准_已经登录"],
         "interrupt": [
             "基准_加载中",
             "登录_关闭签到",
@@ -59,12 +56,12 @@
         "post_wait_freezes": 500
     },
     "登录_每日签到物资": {
-        "recognition": "TemplateMatch",
-        "template": "登录/登录_每日签到物资.png",
-        "method": 3,
-        "threshold": 0.9,
-        "roi": [586, 561, 155, 118],
+        "recognition": "OCR",
+        "expected": ["获取物资"],
+        "roi": [529, 70, 226, 87],
         "action": "Click",
+        "target": [633, 589, 63, 67],
+        "post_delay": 1000,
         "next": ["登录_关闭签到"]
     },
     "登录_关闭签到": {
