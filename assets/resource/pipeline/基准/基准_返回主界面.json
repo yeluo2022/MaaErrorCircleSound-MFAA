@@ -12,7 +12,10 @@
     },
     "基准_返回首页": {
         "recognition": "TemplateMatch",
+        "threshold": 0.95,
+        "roi": [252, 17, 128, 44],
         "template": "基准/基准_返回首页.png",
-        "action": "Click"
+        "action": "Click",
+        "post_delay": 1000
     }
 }
