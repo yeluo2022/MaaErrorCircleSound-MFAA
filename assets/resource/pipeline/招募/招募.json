@@ -19,10 +19,9 @@
         "expected": ["外部招募"],
         "method": 3,
         "threshold": 0.9,
-        "roi": [55, 555, 146, 64],
+        "roi": [36, 112, 180, 501],
         "action": "Click",
-        "post_delay": 1000,
-        "target": [55, 555, 146, 64]
+        "post_delay": 1000
     },
     "招募_招募成功": {
         "recognition": "OCR",
