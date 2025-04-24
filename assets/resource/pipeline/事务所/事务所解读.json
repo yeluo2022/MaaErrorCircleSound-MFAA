@@ -22,7 +22,7 @@
         "rate_limit": 3000,
         "roi": [10, 36, 314, 242],
         "next": ["解读_追加残片", "解读_失败解读"],
-        "interrupt": ["解读_关闭解读", "解读_进行解读", "解读_触发解读"]
+        "interrupt": ["解读_关闭解读", "解读_进行解读", "基建_冥想日志", "解读_触发解读"]
     },
     "解读_触发解读": {
         "action": "Click",
@@ -48,8 +48,8 @@
         "next": ["解读_退出解读"]
     },
     "解读_关闭解读": {
-        "recognition": "TemplateMatch",
-        "template": "事务所/解读/解读_关闭解读.png",
+        "recognition": "OCR",
+        "expected": ["请点击任意空白处关闭界面"],
         "method": 3,
         "threshold": 0.9,
         "action": "Click",

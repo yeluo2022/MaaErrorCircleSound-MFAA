@@ -4,14 +4,15 @@
         "rate_limit": 2000,
         "next": ["基准_完成登录", "基准_已经登录"],
         "interrupt": [
+            "登录_等待加载",
             "基准_加载中",
             "登录_关闭签到",
             "登录_每日签到物资",
-            "登录_月度资源",
             "登录_服务器维护中",
+            "登录_需要更新",
             "登录_关闭登录公告",
-            "登录_等待加载",
             "登录_点击登录",
+            "登录_月度资源",
             "登录_启动游戏"
         ]
     },
@@ -39,11 +40,20 @@
     },
     "登录_服务器维护中": {
         "recognition": "TemplateMatch",
-        "template": "登录/登录_维护中.png",
+        "template": "登录/登录_维护下载.png",
         "post_delay": 12000,
         "method": 3,
         "threshold": 0.9,
         "roi": [587, 355, 116, 84],
+        "action": "Click"
+    },
+    "登录_需要更新": {
+        "recognition": "TemplateMatch",
+        "template": "登录/登录_维护下载.png",
+        "post_delay": 12000,
+        "method": 3,
+        "threshold": 0.9,
+        "roi": [686, 363, 74, 67],
         "action": "Click"
     },
     "登录_点击登录": {

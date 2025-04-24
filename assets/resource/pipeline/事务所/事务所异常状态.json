@@ -1,10 +1,10 @@
 {
     "基建_冥想日志": {
-        "recognition": "TemplateMatch",
-        "template": "事务所/基建_冥想日志.png",
+        "recognition": "OCR",
+        "expected": ["冥想日志"],
         "method": 3,
         "threshold": 0.9,
-        "roi": [559, 40, 159, 44],
+        "roi": [515, 29, 259, 84],
         "action": "Click",
         "target": [1153, 73, 111, 616]
     }
