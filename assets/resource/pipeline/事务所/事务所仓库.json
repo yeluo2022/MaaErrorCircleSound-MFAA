@@ -8,6 +8,7 @@
         "expected": ["库存"],
         "roi": [645, 620, 173, 94],
         "action": "Click",
+        "post_delay": 3000,
         "target_offset": [0, -50, 0, -50]
     },
     "基建_分解_完成分解": {
@@ -42,17 +43,8 @@
         "roi": [650, 438, 237, 47],
         "action": "Click",
         "post_delay": 1000,
-        "next": ["分解_完成分解"]
-    },
-    "分解_完成分解": {
-        "recognition": "OCR",
-        "expected": ["获取物资"],
-        "roi": [529, 70, 226, 87],
-        "action": "Click",
-        "target": [633, 589, 63, 67],
-        "post_delay": 1000,
         "next": ["分解_收尾点击"],
-        "interrupt": ["分解_完成分解"]
+        "interrupt": ["基准_获取物资"]
     },
     "分解_收尾点击": {
         "recognition": "OCR",

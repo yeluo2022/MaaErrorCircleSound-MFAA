@@ -33,15 +33,7 @@
         "post_delay": 3000,
         "target": [937, 529, 135, 37],
         "next": ["招募_启动招募"],
-        "interrupt": ["招募_成功后消除", "招募_消除过程"]
-    },
-    "招募_成功后消除": {
-        "recognition": "OCR",
-        "expected": ["获取物资"],
-        "roi": [529, 70, 226, 87],
-        "action": "Click",
-        "target": [633, 589, 63, 67],
-        "post_delay": 1000
+        "interrupt": ["基准_获取物资", "招募_消除过程"]
     },
     "招募_消除过程": {
         "action": "Click",
