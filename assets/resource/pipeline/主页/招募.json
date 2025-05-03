@@ -19,7 +19,7 @@
         "expected": ["外部招募"],
         "method": 3,
         "threshold": 0.9,
-        "roi": [36, 112, 180, 501],
+        "roi": [32, 111, 189, 521],
         "action": "Click",
         "post_delay": 1000
     },
