@@ -1,4 +1,3 @@
-<!-- markdownlint-disable MD033 MD041 -->
 # MaaErrorCircleSound
 ---
 本项目由[MaaFramework](https://github.com/MaaXYZ/MaaFramework)强力驱动!。
@@ -16,10 +15,10 @@
 - [x] 事务所
   - [x] 刷残片
   - [x] 卖材料
-- [ ] 任务
+- [ ] 任务x
   - [x] 日常任务
   - [ ] 周常任务
-  - [ ] 市区巡逻
+  - [x] 市区巡逻
 - [x] 作战
   - [x] 阈限禁区-会客间
         刷周本黑胶
