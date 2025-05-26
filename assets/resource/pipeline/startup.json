@@ -26,7 +26,7 @@
         "expected": ["资源加载中"],
         "threshold": 0.9,
         "roi": [559, 477, 150, 42],
-        "post_wait_freezes": 1500,
+        "post_delay": 1500,
         "rate_limit": 1000
     },
     "登录_关闭登录公告": {
@@ -35,7 +35,7 @@
         "method": 3,
         "threshold": 0.98,
         "roi": [1126, 76, 51, 49],
-        "post_wait_freezes": 300,
+        "post_delay": 2000,
         "action": "Click"
     },
     "登录_服务器维护中": {

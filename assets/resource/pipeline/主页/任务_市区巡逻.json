@@ -94,7 +94,7 @@
     },
     "巡逻_全部购入_已完成": {
         "recognition": "TemplateMatch",
-        "template": "巡逻\\全部购入_待完成.png",
+        "template": "巡逻\\全部购入_无法完成.png",
         "method": 3,
         "threshold": 0.98,
         "roi": [202, 502, 124, 42],
