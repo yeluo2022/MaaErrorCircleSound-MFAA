@@ -1,18 +1,4 @@
 {
-    "作战_心锚获取_下滑": {
-        "action": "Swipe",
-        "begin": [158, 135, 47, 12],
-        "end": [158, 229, 47, 12],
-        "duration": 1000,
-        "post_delay": 1000
-    },
-    "作战_心锚获取_上滑": {
-        "action": "Swipe",
-        "begin": [158, 229, 47, 12],
-        "end": [158, 135, 47, 12],
-        "duration": 1000,
-        "post_delay": 1000
-    },
     "作战_周本黑胶获取_进入会客间_切换维度": {
         "recognition": "OCR",
         "expected": ["维度III"],

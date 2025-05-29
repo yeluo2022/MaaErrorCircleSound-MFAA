@@ -11,7 +11,7 @@
             "基准_获取物资",
             "登录_服务器维护中",
             "登录_关闭登录公告",
-            "登录_点击登录",
+            "登录_tap登录_预备",
             "登录_月度资源",
             "登录_启动游戏"
         ]
@@ -56,6 +56,26 @@
         "roi": [686, 363, 74, 67],
         "action": "Click"
     },
+    "登录_tap登录_预备": {
+        "recognition": "OCR",
+        "expected": ["TapTap登录", "TapT登录", "登录", "Tap", "TapT"],
+        "method": 3,
+        "threshold": 0.9,
+        "roi": [552, 555, 168, 32],
+        "action": "Click",
+        "post_delay": 5000,
+        "next": ["登录_点击登录"],
+        "interrupt": ["登录_tap登录_完成"]
+    },
+    "登录_tap登录_完成": {
+        "recognition": "OCR",
+        "expected": ["同意"],
+        "method": 3,
+        "threshold": 0.9,
+        "roi": [442, 634, 500, 36],
+        "action": "Click",
+        "post_delay": 2000
+    },
     "登录_点击登录": {
         "recognition": "TemplateMatch",
         "template": "登录/登录_点击开始游戏.png",
@@ -63,7 +83,7 @@
         "threshold": 0.9,
         "roi": [543, 511, 197, 32],
         "action": "Click",
-        "post_wait_freezes": 500
+        "post_delay": 3000
     },
     "登录_关闭签到": {
         "recognition": "TemplateMatch",
