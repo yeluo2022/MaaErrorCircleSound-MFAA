@@ -18,7 +18,7 @@
         "expected": ["支援货柜"],
         "method": 3,
         "threshold": 0.9,
-        "roi": [2, 260, 205, 134],
+        "roi": [5, 139, 200, 573],
         "action": "Click",
         "post_delay": 1000
     },
