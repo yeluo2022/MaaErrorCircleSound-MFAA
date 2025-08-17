@@ -1,8 +1,8 @@
 {
     "version": "v0.0.0.7.8",
     "message": "画大饼游戏",
-    "name": "Maa-ErrorSounds",
-    "url": "https://github.com/MaaXYZ/MCCA",
+    "name": "MEVA",
+    "url": "https://github.com/yeluo2022/MEVA",
     "default_controller": "Adb",
     "controller": [
         {
