@@ -1,94 +1,79 @@
-# MCCA(目前已停止适配更新，等一个大佬)
+# MaaErrorCircleSound
+---
+本项目由[MaaFramework](https://github.com/MaaXYZ/MaaFramework)强力驱动!。
 
-基于全新架构的 交错战线 CrossCore 小助手。图像技术 + 模拟控制，解放双手！  
-由 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 强力驱动！
+[原始README](./README_Old.md)
 
-## 功能介绍
+## 计划列表
+### 功能类：
+- [x] 游戏
+  - [x] 启动游戏
+  - [ ] 关闭游戏
+- [ ] 收取邮件
+- [x] 招募-外部招募
+- [x] 补给站-支援货柜-每日礼包
+- [x] 事务所
+  - [x] 刷残片
+  - [x] 卖材料
+- [ ] 任务x
+  - [x] 日常任务
+  - [ ] 周常任务
+  - [x] 市区巡逻
+- [x] 作战
+  - [x] 阈限禁区-会客间
+        刷周本黑胶
+  - [x] 特别行动-危机行动
+        刷心锚
+  - [ ] 画个大饼
+- [ ] 画个大饼
 
-目前已有的功能：
+### UI/体验类
+- [ ] 启动游戏前切换分辨率
+- [ ] 画个大饼
 
-1. 启动游戏
-2. 每日免费礼包
-3. 每日探索(只使用自然回复的燃料)
-4. 模拟军演(只打第一个，次数耗尽为止)
-5. 基建(换班+好友换抽)
-6. 周本(支持第一关(45微晶)、第五关(120微晶)。需提前配好一队)
-7. 领取奖励(邮箱+每日+通行证)
-8. 关闭游戏
-
-## 使用说明
-
-下载地址：<https://github.com/MaaXYZ/MCCA/releases>
-1. MuMu模拟器需要关闭模拟器设置中的“后台挂机时保活运行”
-2. 运行过程MaaPiCli窗口出现红字是正常的
-3. 模拟器不能有中文路径
-4. 模拟器窗口大小要16:9，最好建议是使用720p分辨率
-5. 运行卡住请将debug文件夹中的maa.log发出来，并附带出错时的游戏截图
-
-### Windows
-
-- 对于绝大部分用户，请下载 `MCCA-win-x86_64-vXXX.zip`
-- 若确定自己的电脑是 arm 架构，请下载 `MCCA-win-aarch64-vXXX.zip`
-- 解压后运行 `MaaPiCli.exe` 即可
-
-
-### macOS
-
-- 若使用 Intel 处理器，请下载 `MCCA-macos-x86_64-vXXX.zip`
-- 若使用 M1, M2 等 arm 处理器，请下载 `MCCA-macos-aarch64-vXXX.zip`
-- 使用方式：
-
-  ```bash
-  chmod a+x MaaPiCli
-  ./MaaPiCli
-  ```
-
-### Linux
-
-~~用 Linux 的大佬应该不需要我教~~
-
-## 图形化界面
-
-- 如果需要使用图形化界面，请下载 `MCCA-win-x86_64-with-gui-vXXX.zip`，目前只支持Windows
-- 图形化界面需要.NET8运行库，请自行安装
-- 解压后运行`MFAWPF.exe`即可
-- 本GUI由社区大佬[SweetSmellFox](https://github.com/SweetSmellFox)编写，相关项目见[MFAWPF](https://github.com/SweetSmellFox/MFAWPF)
-
-## 其他说明
-
-- 添加 `-d` 参数可跳过交互直接运行任务，如 `./MaaPiCli.exe -d`
-- 反馈问题请附上日志文件 `debug/maa.log`，谢谢！
+## pipeline编写:
+1. [任务流水线协议](https://github.com/MaaXYZ/MaaFramework/blob/main/docs/zh_cn/3.1-%E4%BB%BB%E5%8A%A1%E6%B5%81%E6%B0%B4%E7%BA%BF%E5%8D%8F%E8%AE%AE.md)
+2. [pipeline-非强制使用](./assets/resource/pipeline/ReadMe.md)
 
 
-## How to build
-
-**如果你要编译源码才看这节，否则直接 [下载](https://github.com/MaaXYZ/MCCA/releases) 即可**
-
-0. 完整克隆本项目及子项目
+## 上传发版
+1. 完成开发工作后，上传您的代码并发布版本。
 
     ```bash
-    git clone --recursive https://github.com/MaaXYZ/MCCA.git
+    # 配置 git 信息（仅第一次需要，后续不用再配置）
+    git config user.name "您的 GitHub 昵称"
+    git config user.email "您的 GitHub 邮箱"
+    
+    # 提交修改
+    git add .
+    git commit -m "XX 新功能"
+    git push origin HEAD -u
     ```
 
-1. 下载 MaaFramework 的 [Release 包](https://github.com/MaaXYZ/MaaFramework/releases)，解压到 `deps` 文件夹中
-2. 安装
+2. 发布您的版本
 
-    ```python
-    python ./install.py
+    需要**先**修改仓库设置 `Settings` - `Actions` - `General` - `Read and write permissions` - `Save`
+
+    ```bash
+    # CI 检测到 tag 会自动进行发版
+    git tag v1.0.0
+    git push origin v1.0.0
     ```
 
-生成的二进制及相关资源文件在 `install` 目录下
+3. 更多操作，请参考[个性化配置](./docs/zh_cn/个性化配置.md)（可选）
 
-## 开发相关
+## 生态共建
 
-- [MaaFramework 快速开始](https://github.com/MaaXYZ/MaaFramework/blob/main/docs/zh_cn/1.1-%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B.md)
+MAA 正计划建设为一类项目，而非舟的单一软件。
 
-## Join us
+若您的项目依赖于 MaaFramework，我们欢迎您将它命名为 MaaXXX, MXA, MAX 等等。当然，这是许可而不是限制，您也可以自由选择其他与 MAA 无关的名字，完全取决于您自己的想法！
 
-- MCCA 交流群：950540737
-- MaaFramework 开发交流 QQ 群: 595990173
+同时，我们也非常欢迎您提出 PR，在 [最佳实践列表](https://github.com/MaaXYZ/MaaFramework#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5) 中添加上您的项目！
 
 ## 鸣谢
 
 本项目由 **[MaaFramework](https://github.com/MaaXYZ/MaaFramework)** 强力驱动！
 
+感谢以下开发者对本项目作出的贡献（下面链接改成你自己的项目地址）:
+
+[![Contributors](https://contrib.rocks/image?repo=MaaXYZ/MaaFramework&max=1000)](https://github.com/MaaXYZ/MaaFramework/graphs/contributors)
