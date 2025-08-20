@@ -61,7 +61,7 @@
         "expected": ["TapTap登录", "TapT登录", "登录", "Tap", "TapT"],
         "method": 3,
         "threshold": 0.9,
-        "roi": [552, 555, 168, 32],
+        "roi": [494, 456, 308, 149],
         "action": "Click",
         "post_delay": 5000,
         "next": ["登录_点击登录"],
