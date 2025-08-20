@@ -1,11 +1,14 @@
 # MaaErrorCircleSound
+
 ---
 本项目由[MaaFramework](https://github.com/MaaXYZ/MaaFramework)强力驱动!。
 
 [原始README](./README_Old.md)
 
 ## 计划列表
-### 功能类：
+
+### 功能类
+
 - [x] 游戏
   - [x] 启动游戏
   - [ ] 关闭游戏
@@ -24,19 +27,21 @@
         刷周本黑胶
   - [x] 特别行动-危机行动
         刷心锚
-  - [ ] 画个大饼
+  - [x] 回廊93区
 - [ ] 画个大饼
 
 ### UI/体验类
+
 - [ ] 启动游戏前切换分辨率
 - [ ] 画个大饼
 
-## pipeline编写:
+## pipeline编写
+
 1. [任务流水线协议](https://github.com/MaaXYZ/MaaFramework/blob/main/docs/zh_cn/3.1-%E4%BB%BB%E5%8A%A1%E6%B5%81%E6%B0%B4%E7%BA%BF%E5%8D%8F%E8%AE%AE.md)
 2. [pipeline-非强制使用](./assets/resource/pipeline/ReadMe.md)
 
-
 ## 上传发版
+
 1. 完成开发工作后，上传您的代码并发布版本。
 
     ```bash
