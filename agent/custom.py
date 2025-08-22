@@ -1,1 +1,1 @@
-import customs.CompareNumber
+import custom.CompareNumber

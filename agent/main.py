@@ -1,6 +1,7 @@
 import os
 import sys
 import io
+import re  # 添加 re 模块导入
 
 sys.stdout.reconfigure(encoding="gbk")
 sys.stderr.reconfigure(encoding="gbk")
