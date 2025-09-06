@@ -125,7 +125,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: MEVA-win-${{ matrix.arch }}
+          name: MaaErrorCircleSound-MFAA-win-${{ matrix.arch }}
           path: "install"
 
   linux:
@@ -184,7 +184,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: MEVA-linux-${{ matrix.arch }}
+          name: MaaErrorCircleSound-MFAA-linux-${{ matrix.arch }}
           path: "install"
 
   macos:
@@ -254,7 +254,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: MEVA-macos-${{ matrix.arch }}
+          name: MaaErrorCircleSound-MFAA-macos-${{ matrix.arch }}
           path: "install"
 
   changelog:

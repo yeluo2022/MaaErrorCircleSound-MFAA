@@ -1,8 +1,8 @@
 {
     "version": "v0.0.0.7.8",
     "message": "画大饼游戏",
-    "name": "MEVA",
-    "url": "https://github.com/yeluo2022/MEVA",
+    "name": "MaaErrorCircleSound-MFAA",
+    "url": "https://github.com/yeluo2022/MaaErrorCircleSound-MFAA",
     "controller": [
         {
             "name": "ADB 默认方式",
